@@ -4,16 +4,14 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarGroup,
-  SidebarHeader,
-  SidebarMenuButton,
-} from "@/components/ui/sidebar"
-import { Button } from "./ui/button"
-import { Label } from "./ui/label";
-import Image from 'next/image'
+  SidebarHeader
+} from "@/components/ui/sidebar";
+import { Button } from "./ui/button";
+import Image from 'next/image';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "./ui/dropdown-menu";
 import { ChevronDown } from "lucide-react";
-import { link } from "fs";
-import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle";
+
 
 export function AppSidebar() {
   return (
@@ -21,40 +19,48 @@ export function AppSidebar() {
       <SidebarHeader>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className=" bg-sidebar hover:bg-[#3f3f46] hover:text-hovered-text rounded-md text-default-text flex items-center justify-start font-bold">
-              <Image src="/images/people_8365036.png" alt="AccountInfo" width={16} height={16} className="mb-0.5" />
-              SunRaven
+            <Button className=" bg-sidebar hover:bg-[#3f3f46] hover:text-[#ffffff] ocus:text-[#ffffff] r+ounded-md text-default-text flex items-center justify-start font-medium text-[13px]">
+              <Image src="/images/raven.png" alt="AccountInfo" width={20} height={20} className="mb-0.5" />
+              Cillian
               <ChevronDown className="ml-auto" />
             </Button>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="text-default-text hover:text-hovered-text">
+          <DropdownMenuContent>
             <DropdownMenuLabel> My Account  </DropdownMenuLabel>
-            <DropdownMenuItem>
+            <DropdownMenuItem className="hover:text-[#ffffff] focus:text-[#ffffff] ext-default-text" variant="default">
               Preferences
             </DropdownMenuItem>
-            <DropdownMenuItem>
+            <DropdownMenuItem className="hover:text-[#ffffff] focus:text-[#ffffff] text-default-text">
               Invite members
             </DropdownMenuItem>
-            <DropdownMenuSeparator/>
+            <DropdownMenuSeparator />
           </DropdownMenuContent>
         </DropdownMenu>
-        <Button variant="secondary" asChild className="bg-sidebar hover:bg-[#3f3f46] hover:text-hovered-text rounded-md text-default-text font-medium w-full justify-start">
-          <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <Image src="/images/search-file.png" alt="homeIcon" width={16} height={16} className="mb-0.5" />
-            Overview
-          </Link>
+        <Button className="bg-sidebar hover:bg-[#3f3f46] hover:text-[#ffffff] rounded-md text-default-text font-medium text-[13px] w-full justify-start">
+          <Image src="/images/len.png" alt="homeIcon" width={20} height={20} />
+          Search
         </Button>
-        <Button className=" bg-sidebar hover:bg-[#3f3f46] hover:text-hovered-text rounded-md text-default-text flex items-center justify-start font-medium">
-          <Image src="/images/spotlight-svgrepo-com.svg" alt="showHighlights" width={16} height={16} />
+        <Button className="bg-sidebar hover:bg-[#3f3f46] hover:text-[#ffffff] rounded-md text-default-text font-medium text-[13px] w-full justify-start">
+          <Image src="/images/business-report_6439018.png" alt="homeIcon" width={20} height={20} className="mb-0.5" />
+          Overview
+        </Button>
+        <Button className=" bg-sidebar hover:bg-[#3f3f46] hover:text-[#ffffff] rounded-md text-default-text flex items-center justify-start font-medium text-[13px]">
+          <Image src="/images/spotlight_8560250.png" alt="showHighlights" width={20} height={20} />
           Highlights
         </Button>
-
       </SidebarHeader>
       <SidebarContent>
-        <SidebarGroup />
+        <SidebarGroup>
+        <Button className="bg-sidebar hover:bg-[#3f3f46] hover:text-[#ffffff] rounded-md text-default-text font-medium text-[13px] w-full justify-start">
+          <Image src="/images/vinyl-record_2987300.png" alt="homeIcon" width={20} height={20} className="mb-0.5" />
+          Music Lounge
+        </Button>
+        </SidebarGroup>
         <SidebarGroup />
       </SidebarContent>
-      <SidebarFooter />
+      <SidebarFooter>
+        <ThemeToggle></ThemeToggle>
+      </SidebarFooter>
     </Sidebar >
   )
 }

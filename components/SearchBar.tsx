@@ -1,19 +1,14 @@
-import Image from "next/image";
-import { Input } from "./ui/input";
+import { Field } from "@/components/ui/field"
+import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
-export default function SearchBar() {
+export function SearchBar() {
   return (
-    <div className="flex w-full h-full gap-x-2 items-center pt 1px">
-      <span className="absolute h-[35px] w-[35px] pl-[10px] pt-[8px]">
-        <Image src="/images/search.png" alt="icon" width={22} height={22} />
+    <Field orientation="horizontal" className="flex justify-start">
+      <span className="flex	items-center w-auto p-2.5 gap-x-2">
+        <Image alt="seach-bar" width={16} height={16} src="/images/search_4084332.png" />
+        <Input type="search" placeholder="Search..." className="rounded-md w-auto" />
       </span>
-      <span className="h-auto w-full">
-        <Input
-          type="search"
-          className="pl-11 pb-1.75 rounded-full border-[#6906d3ab] pt-[4px] placeholder:text-[#edededc0]"
-          placeholder="Looking for something? .. "
-        ></Input>
-      </span>
-    </div>
-  );
+    </Field>
+  )
 }
