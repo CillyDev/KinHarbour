@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Kinharbour
 
-## Getting Started
+Kinharbour is a personal project aiming to build an invite-only self-contained social hub for small groups (friends/family/significant others/housemates/teams), delivered as a dedicated private instance. It plans on replacing noisy social media with a calm, private space for sharing updates, planning events, and keeping track of the little things in life while keeping ownership of your data in the hands of the user.
 
-First, run the development server:
+## Planned Concept
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Private instance model (Single-tenant SaaS)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A dedicated instance for a small group of users clossed off from the outside. Accessable only through generated keys ( Invite only). Every instance has a unique Tenant ID, and each invited person receives a unique User ID that is securely associated with that Tenant ID upon accepting the invite, or upon instance creation.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Templates
+User or the creator of the private instance will have the chance to set the current theme or the purpose of creating the group
+- Couple / Partners
+- Family
+- Teams / Projects
+- Friends / Communities
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Templates will decide the features set that will be available to the instance, depending on the setting
 
-## Learn More
+### Planned Core Features 
+- Personal Highlights (Personal posts / blogs)
+- Event planning ( Shared Calendar showing the group's memeber availability)
+- Music sharing ( converted to the selected music app / platfrom)
+- Media sharing
+- Shared resources / links 
 
-To learn more about Next.js, take a look at the following resources:
+### Planned Optional features (Depending on the template chosen) 
+- Intimacy Journal (Couple template only)
+- Hobby Corner (Couple & Partners/ friends)
+- Relationship retrospective: Favroutie dates and moments (Couple / Partners)
+- Keepsakes: Favourite hangouts, dates or memories (Couple / Partners, Friends & Communities , Family)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tech Stack
 
-## Deploy on Vercel
+- Frontend: React, Next.Js, TypeScript
+- Backend: Python
+- Database: PostgreSQL / Elasticsearch
+- Auth: WebAuthn
+- Deployment: Kubernetes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Changelog
+Update and progress will be documented here as the project evolves
