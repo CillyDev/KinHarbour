@@ -41,7 +41,15 @@ Templates will decide the features set that will be available to the instance, d
 - Backend: Python
 - Database: PostgreSQL / Elasticsearch
 - Auth: WebAuthn
-
+<br>
+<br>
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+ 
 
 <a id="deutsch"></a>
 
