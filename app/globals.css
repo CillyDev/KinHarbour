@@ -48,6 +48,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
   --color-default-text: var(--default-text-color);
   --color-hovered-text: var(--hovered-text-color);
+  --color-hovered-button: var(--hovered-button-color);
 }
 
 :root {
@@ -83,8 +84,9 @@
   --sidebar-ring: oklch(0.705 0.015 286.067);
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
-  --default-text-color: #b8b8b1;
-  --hovered-text-color: #b7bab6;
+  --default-text-color: oklch(0.7878 0 0);
+  --hovered-text-color: oklch(0.9214 0 0);
+  --hovered-button-color: #3f3f46;
 }
 
 .dark {
@@ -119,8 +121,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
-  --default-text-color: #b8b8b1;
-  --hovered-text-color: #b7bab6;
+  --default-text-color: oklch(0.7878 0 0);
+  --hovered-text-color: oklch(0.9214 0 0);
+  --hovered-button-color: #3f3f46;
 }
 
 @layer base {

@@ -1,4 +1,4 @@
-export default function Overview() {
+export default function Highlights() {
   return (
     <div className="w-full h-full">
       
