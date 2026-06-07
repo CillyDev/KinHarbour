@@ -25,7 +25,7 @@ Templates will decide the features set that will be available to the instance, d
 - Personal Highlights (Personal posts / blogs)
 - Event planning ( Shared Calendar showing the group's memeber availability)
 - Music sharing ( converted to the selected music app / platfrom)
-- Media sharing
+- Media / Posts sharing 
 - Shared resources / links
 
 ## **Planned Optional features (Depending on the template chosen)**
@@ -79,7 +79,7 @@ Die Templates legen fest, welche Funktionsbereiche der Instanz zur Verfügung st
 
 - Musik teilen (automatische Anpassung an die gewählte Musik-App/Plattform)
 
-- Medien teilen
+- Medien / Beiträge teilen
 
 Geteilte Ressourcen/Links
 
