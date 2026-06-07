@@ -27,6 +27,7 @@ Templates will decide the features set that will be available to the instance, d
 - Music sharing ( converted to the selected music app / platfrom)
 - Ability to share posts, and Media ("Kinship")
 - Shared resources / links ("Shared Secrets")
+- Planning events / outings through a shared Calendar ("Quest Board")
 
 ## **Planned Optional features (Depending on the template chosen)**
 
@@ -78,8 +79,9 @@ Die Templates legen fest, welche Funktionsbereiche der Instanz zur Verfügung st
 - Eventplanung (gemeinsamer Kalender mit Verfügbarkeiten der Gruppenmitglieder)
 
 - Musik teilen (automatische Anpassung an die gewählte Musik-App/Plattform)
-
-- Medien / Beiträge teilen
+- Beiträge und Medien teilen („Kinship")
+- Geteilte Ressourcen/Links („Shared Secrets")
+- Events und Ausflüge über einen gemeinsamen Kalender planen („Quest Board")
 
 Geteilte Ressourcen/Links
 
