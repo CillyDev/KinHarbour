@@ -25,8 +25,8 @@ Templates will decide the features set that will be available to the instance, d
 - Personal Highlights (Personal posts / blogs)
 - Event planning ( Shared Calendar showing the group's memeber availability)
 - Music sharing ( converted to the selected music app / platfrom)
-- Ability to share posts, and Media
-- Shared resources / links
+- Ability to share posts, and Media ("Kinship")
+- Shared resources / links ("Shared Secrets")
 
 ## **Planned Optional features (Depending on the template chosen)**
 
