@@ -21,8 +21,8 @@ export function AppSidebar() {
       <SidebarHeader>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button className="flex bg-sidebar rounded-md text-default-text text-sm py-[1.15em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
-              <Image src="/images/raven.png" alt="AccountInfo" width={20} height={20} />
+          <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+              <Image src="/images/raven.png" alt="AccountInfo" width={32} height={32} />
               Cillian
               <ChevronDown className="ml-auto" />
             </Button>
@@ -38,35 +38,35 @@ export function AppSidebar() {
             <DropdownMenuSeparator />
           </DropdownMenuContent>
         </DropdownMenu>
-
         <Link href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" className="w-full">
-          <Button className=" w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.15em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
-            <Image src="/images/business-report_6439018.png" alt="homeIcon" width={20} height={20} />
+        <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <Image src="/images/business-report_6439018.png" alt="homeIcon" width={32} height={32} />
             Overview
           </Button>
         </Link>
         <Link href="/highlights">
-          <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.15em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
-            <Image src="/images/spotlight_8560250.png" alt="showHighlights" width={20} height={20} />
+        <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+            <Image src="/images/spotlight_8560250.png" alt="showHighlights" width={32} height={32} />
             Highlights
           </Button>
         </Link>
-        <Link href="/music-lounge">
-            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.15em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
-              <Image src="/images/vinyl-record_2987300.png" alt="homeIcon" width={20} height={20} />
+      </SidebarHeader>
+      <span className="flex justify-center">
+        <span className="w-55 px-2.5">
+          <Separator className="bg-[#373B3F]"></Separator>
+        </span>
+      </span>
+      <SidebarContent>
+        <SidebarGroup>
+          <Link href="/music-lounge">
+            <Button className="w-full flex bg-sidebar rounded-md text-default-text text-sm py-[1.5em] items-center justify-start font gap-x-3 hover:bg-hovered-button hover:text-hovered-text">
+              <Image src="/images/vinyl-record_2987300.png" alt="homeIcon" width={32} height={32} />
               Music Lounge
             </Button>
           </Link>
-      </SidebarHeader>
-      <SidebarContent>
-        <SidebarGroup>
-          
+
         </SidebarGroup>
-        <span className="flex">
-          <span className="w-65 px-2.5">
-            <Separator className="bg-[#373B3F]"></Separator>
-          </span>
-        </span>
+
         <SidebarGroup />
       </SidebarContent>
 
@@ -76,3 +76,4 @@ export function AppSidebar() {
     </Sidebar >
   )
 }
+
